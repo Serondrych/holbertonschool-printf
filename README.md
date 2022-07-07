@@ -1,6 +1,6 @@
 # README
 
-PRINTF PROJECT developed by Felipe Sandim and Felippe Mari
+*PRINTF PROJECT* developed by Felipe Sandim and Felippe Mari
 
 # DESCRIPTION OF PRINTF
 
