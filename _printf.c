@@ -1,5 +1,4 @@
-#include <stdarg.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * _printf - produces output according to a format
@@ -9,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i, k = 0; length = 0
+	int i, k = 0, length = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
@@ -26,7 +25,7 @@ int _printf(const char *format, ...)
 			else if (format[i + 1] == '\0')
 			{
 				return (-1);
-			}
+			}	
 			else k = 1;
 		}
 		else
@@ -40,7 +39,7 @@ int _printf(const char *format, ...)
 					length += _stringlength(va_arg(args, char *));
 					break;
 				case '%':
-					length += _putchar '%';
+					length += _putchar('%');
 					break;
 			}
 			k = 0;

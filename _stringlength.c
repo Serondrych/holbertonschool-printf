@@ -1,4 +1,6 @@
 #include "main.h"
+#include "_putchar.c"
+#include <stddef.h>
 
 /**
  * _stringlength - prints the length of the string
@@ -11,7 +13,7 @@ int _stringlength(char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
+		str = ("(null)");
 	}
 	for (i = 0; str[i]; i++)
 	{
