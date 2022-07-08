@@ -27,27 +27,27 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 			else 
-			k = 1;
+				k = 1;
 		}
 		else
 		{
 			switch (format[i])
 			{
-				case 'c':
-					length += _putchar(va_arg(args, int));
-					break;
-				case 's':
-					length += _stringlength(va_arg(args, char *));
-					break;
-				case '%':
-					length += _putchar('%');
-					break;
-				case '\n':
-					_putchar('\n');
-					break;
-				default:
-					length += _putchar('%');
-					length += _putchar(format[i]);
+			case 'c':
+				length += _putchar(va_arg(args, int));
+				break;
+			case 's':	
+				length += _stringlength(va_arg(args, char *));
+				break;
+			case '%':
+				length += _putchar('%');
+				break;
+			case '\n':
+				_putchar('\n');	
+				break;
+			default:
+				length += _putchar('%');
+				length += _putchar(format[i]);
 			}
 			k = 0;
 		}
