@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 				length += _putchar(va_arg(list, int));
 				break;
 			case 's':
-				length += _string_print(va_arg(list, char *));
+				length += _stringlength(va_arg(list, char *));
 				break;
 			case '%':
 				length += _putchar('%');
