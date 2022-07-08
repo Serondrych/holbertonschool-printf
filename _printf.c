@@ -7,14 +7,14 @@
  **/
 int _printf(const char *format, ...)
 {
-	va_list args;
+	va_list list;
 	int i, k = 0, length = 0;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	va_start(args, format);
-	for (i = 0; format[i] != '\0'; i++)
+		va_start(list, format);
+	for (i = 0; format[i] != '\0' ; i++)
 	{
 		if (!k)
 		{
@@ -22,11 +22,12 @@ int _printf(const char *format, ...)
 			{
 				length += _putchar(format[i]);
 			}
+
 			else if (format[i + 1] == '\0')
 			{
 				return (-1);
 			}
-			else 
+			else
 				k = 1;
 		}
 		else
@@ -34,16 +35,16 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				length += _putchar(va_arg(args, int));
+				length += _putchar(va_arg(list, int));
 				break;
-			case 's':	
-				length += _stringlength(va_arg(args, char *));
+			case 's':
+				length += _string_print(va_arg(list, char *));
 				break;
 			case '%':
 				length += _putchar('%');
 				break;
 			case '\n':
-				_putchar('\n');	
+				_putchar(10);
 				break;
 			default:
 				length += _putchar('%');
@@ -51,7 +52,7 @@ int _printf(const char *format, ...)
 			}
 			k = 0;
 		}
-	va_end(args);
+	va_end(list);
 	}
 	return (length);
 }

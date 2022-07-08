@@ -17,5 +17,5 @@ int _stringlength(char *str)
 	{
 		putchar(str[i]);
 	}
-	return(i);
+	return (i);
 }
