@@ -1,11 +1,11 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
-* _putchar - writes the character 'c'
+* _putchar - writes a character
 * @c: the character
-* Return: the character 'c'
+* Return: the character
 **/
 int _putchar(char c)
 {
-			return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
