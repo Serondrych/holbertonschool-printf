@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	va_start(list, format);
+	va_start(args, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (!k)
@@ -34,10 +34,10 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					length += _putchar(va_arg(list, int));
+					length += _putchar(va_arg(args, int));
 					break;
 				case 's':
-					length += _stringlength(va_arg(list, char *));
+					length += _stringlength(va_arg(args, char *));
 					break;
 				case '%':
 					length += _putchar '%';
@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 			}
 			k = 0;
 		}
-	va_end(list);
+	va_end(args);
 	}
 	return (length);
 }
