@@ -25,8 +25,9 @@ int _printf(const char *format, ...)
 			else if (format[i + 1] == '\0')
 			{
 				return (-1);
-			}	
-			else k = 1;
+			}
+			else 
+			k = 1;
 		}
 		else
 		{
@@ -41,6 +42,12 @@ int _printf(const char *format, ...)
 				case '%':
 					length += _putchar('%');
 					break;
+				case '\n':
+					_putchar('\n');
+					break;
+				default:
+					length += _putchar('%');
+					length += _putchar(format[i]);
 			}
 			k = 0;
 		}
