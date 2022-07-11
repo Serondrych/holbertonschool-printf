@@ -1,16 +1,16 @@
-# README
-
-*PRINTF PROJECT* developed by Felipe Sandim and Felippe Mari
+**PRINTF PROJECT** developed by Felipe Sandim and Felippe Mari for Holberton School Uruguay.
 
 # DESCRIPTION OF PRINTF
 
-The function **_printf()** produces output according to a format.
+The function **_printf()** is a reproduction of the **printf()* function that produces output according to a format.
 
 # COMPILATION
 
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # SPECIFIERS
+
+Not all specifiers of *printf()* are used, the required ones are:
 
 %c - Used to print a character
 
@@ -24,15 +24,15 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # FILES & FUNCTIONS
 
-_printf.c - produces output according to a format
+_printf.c - main program that produces output according to a format
 
 _putchar.c - writes a character
 
-all_the_functions.c - functions to print in the format according to the specifiers
+all_the_functions.c - functions to print the specifiers
 
 main.c - test program
 
-main.h - header file, includes to libraries, structs and functions needed
+main.h - main header file: includes to libraries, structs and functions needed
 
 # FLOWCHART
 
