@@ -28,15 +28,15 @@ Not all specifiers of *printf()* are used, the required ones are:
 
 ## FILES & FUNCTIONS
 
-_printf.c - main program that produces output according to a format
+`_printf.c` - main program that produces output according to a format
 
-_putchar.c - writes a character
+`_putchar.c` - writes a character
 
-all_the_functions.c - functions to print the specifiers
+`all_the_functions.c` - functions to print the specifiers
 
-main.c - test program
+`main.c` - test program
 
-main.h - main header file: includes to libraries, structs and functions needed
+`main.h` - main header file: includes to libraries, structs and functions needed
 
 ## FLOWCHART
 
