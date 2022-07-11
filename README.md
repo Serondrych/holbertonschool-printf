@@ -1,4 +1,4 @@
-#PRINTF PROJECT
+# PRINTF PROJECT
 
 Developed by Felipe Sandim and Felippe Mari for Holberton School Uruguay.
 
