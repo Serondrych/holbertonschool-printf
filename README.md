@@ -2,11 +2,12 @@
 
 Developed by Felipe Sandim and Felippe Mari for Holberton School Uruguay.
 
-## DESCRIPTION OF PRINTF
+## DESCRIPTION
 
-The function **_printf()** is a reproduction of the **printf()** function that produces output according to a format.
+The project is a reproduction of the **printf()** function that produces output according to a format.
 
 ## COMPILATION
+
 Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 	$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
@@ -39,4 +40,4 @@ main.h - main header file: includes to libraries, structs and functions needed
 
 ## FLOWCHART
 
-...
+Comming sooon...
