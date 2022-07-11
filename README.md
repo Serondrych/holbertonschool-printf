@@ -16,15 +16,15 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 Not all specifiers of *printf()* are used, the required ones are:
 
-'%c' - Used to print a character
+`%c` - Used to print a character
 
-'%s' - Used to print a string
+`%s` - Used to print a string
 
-'%%' - Used to print a percentage (%) symbol
+`%%` - Used to print a percentage (%) symbol
 
-'%d' - Used to print a decimal integer
+`%d` - Used to print a decimal integer
 
-'%i' - Used to print a decimal, octal or hexadecimal integer
+`%i` - Used to print a decimal, octal or hexadecimal integer
 
 ## FILES & FUNCTIONS
 
