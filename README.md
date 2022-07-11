@@ -33,3 +33,7 @@ all_the_functions.c - functions to print in the format according to the specifie
 main.c - test program
 
 main.h - header file, includes to libraries, structs and functions needed
+
+# FLOWCHART
+
+...
