@@ -2,11 +2,12 @@
 
 # DESCRIPTION OF PRINTF
 
-The function **_printf()** is a reproduction of the **printf()* function that produces output according to a format.
+The function **_printf()** is a reproduction of the **printf()** function that produces output according to a format.
 
 # COMPILATION
+Program is compiled on Ubuntu 20.04 LTS
 
-$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+	$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # SPECIFIERS
 
