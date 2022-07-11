@@ -7,52 +7,42 @@
  **/
 int _printf(const char *format, ...)
 {
-	va_list list;
-	int i, k = 0, length = 0;
+	int i, length = 0;
+	va_list arg;
 
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL)
 		return (-1);
-
-		va_start(list, format);
-	for (i = 0; format[i] != '\0' ; i++)
+	va_start(arg, format);
+	for (i = 0; format[i]; i++)
 	{
-		if (!k)
+		if (format[i] != '%')
 		{
-			if (format[i] != '%')
+			_putchar(format[i]);
+			length++;
+		}
+		else if (format[i] == '%')
+		{
+			i++;
+			if (format[i] == '%')
 			{
-				length += _putchar(format[i]);
+				_putchar('%');
+				length++;
 			}
-
-			else if (format[i + 1] == '\0')
+			else if (format[i] != '\0')
 			{
-				return (-1);
+				if (func(format[i]))
+					length += func(format[i])(arg);
+				else if (func(format[i]) == 0)
+				{
+					_putchar('%');
+					_putchar(format[i]);
+					length += 2;
+				}
 			}
 			else
-				k = 1;
+				return (-1);
 		}
-		else
-		{
-			switch (format[i])
-			{
-			case 'c':
-				length += _putchar(va_arg(list, int));
-				break;
-			case 's':
-				length += _stringlength(va_arg(list, char *));
-				break;
-			case '%':
-				length += _putchar('%');
-				break;
-			case '\n':
-				_putchar(10);
-				break;
-			default:
-				length += _putchar('%');
-				length += _putchar(format[i]);
-			}
-			k = 0;
-		}
-	va_end(list);
 	}
+	va_end(arg);
 	return (length);
 }
