@@ -50,10 +50,11 @@ int form_s(va_list arg)
 }
 
 /** 
- * form_d - prints in %d format.
- * @arg: argument to print.
- * Return: an integrer.
+ * form_d - prints in %d format
+ * @arg: argument to print
+ * Return: an int
  **/
+
 int form_d(va_list arg)
 {
 	unsigned int abs, aux, num, account;
@@ -83,11 +84,13 @@ int form_d(va_list arg)
 	}
 	return (account);
 }
+
 /**
  * form_i - prints in %i format
  * @arg: argument to print
  * Return: an int
- **/ 
+ **/
+
 int form_i(va_list arg)
 {
 	return (form_d(arg));
