@@ -1,15 +1,17 @@
-**PRINTF PROJECT** developed by Felipe Sandim and Felippe Mari for Holberton School Uruguay.
+#PRINTF PROJECT
 
-# DESCRIPTION OF PRINTF
+Developed by Felipe Sandim and Felippe Mari for Holberton School Uruguay.
+
+## DESCRIPTION OF PRINTF
 
 The function **_printf()** is a reproduction of the **printf()** function that produces output according to a format.
 
-# COMPILATION
-Program is compiled on Ubuntu 20.04 LTS
+## COMPILATION
+Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 	$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
-# SPECIFIERS
+## SPECIFIERS
 
 Not all specifiers of *printf()* are used, the required ones are:
 
@@ -23,7 +25,7 @@ Not all specifiers of *printf()* are used, the required ones are:
 
 %i - Used to print a decimal, octal or hexadecimal integer
 
-# FILES & FUNCTIONS
+## FILES & FUNCTIONS
 
 _printf.c - main program that produces output according to a format
 
@@ -35,6 +37,6 @@ main.c - test program
 
 main.h - main header file: includes to libraries, structs and functions needed
 
-# FLOWCHART
+## FLOWCHART
 
 ...
