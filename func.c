@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * func - get the function according to the format
+ * func - get the func
  * @c: the format
  * Return: to function
  **/
