@@ -24,4 +24,12 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # FILES & FUNCTIONS
 
-...
+_printf.c - produces output according to a format
+
+_putchar.c - writes a character
+
+all_the_functions.c - functions to print in the format according to the specifiers
+
+main.c - test program
+
+main.h - header file, includes to libraries, structs and functions needed
