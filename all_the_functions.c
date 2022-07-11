@@ -49,7 +49,7 @@ int form_s(va_list arg)
 	return (0);
 }
 
-/** 
+/**
  * form_d - prints in %d format
  * @arg: argument to print
  * Return: an int
