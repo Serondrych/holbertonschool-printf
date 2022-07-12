@@ -40,4 +40,4 @@ Not all specifiers of *printf()* are used, the required ones are:
 
 ## FLOWCHART
 
-Coming soon...
+![_printf flowchart](https://user-images.githubusercontent.com/105666151/178492086-035be51c-0df5-441c-89d9-50ddae30186a.jpg)
