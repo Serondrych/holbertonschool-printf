@@ -38,6 +38,10 @@ Not all specifiers of *printf()* are used, the required ones are:
 
 `main.h` - main header file: includes to libraries, structs and functions needed
 
+## EXAMPLE
+Command: `_printf("Hello%s0, ", World!")`
+Returns: `Hello, World!`
+
 ## FLOWCHART
 
 ![_printf flowchart](https://user-images.githubusercontent.com/105666151/178492086-035be51c-0df5-441c-89d9-50ddae30186a.jpg)
