@@ -14,20 +14,20 @@ The function can print any string passed inside double quotes, or you can call p
 
 .SH SPECIFIERS
 .B Not all specifiers of printf() are used, the required ones are:
-.IP - %c - Used to print a character
-.IP - %s - Used to print a string
-.IP - %% - Used to print a percentage (%) symbol
-.IP - %d - Used to print a decimal number
-.IP - %i - Used to print an integer number
+.IP "%c - Used to print a character"
+.IP "%s - Used to print a string"
+.IP "%% - Used to print a percentage (%) symbol"
+.IP "%d - Used to print a decimal number"
+.IP "%i - Used to print an integer number"
 
 .SH EXAMPLES
 Command: _printf("Hello%s\n", ", World!");
-Return: Hello, World!
+Returns: Hello, World!
 
 .SH BUGS
 No bugs known.
 
-.SH AUTHOR
+.SH AUTHORS
 Felipe Sandim (felipe.sandim@holbertonschool.com) and Felippe Mari (felippe.mari@holbertonschool.com)
 
 .SH COPYRIGHT
