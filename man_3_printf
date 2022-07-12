@@ -1,0 +1,34 @@
+./Manpage for _printf
+.TH man 3 "11 July 2022" "_printf man page"
+
+.SH NAME
+.B _printf - C Function
+
+.SH SYNOPSIS
+_printf(const char *format, ...) is the function prototype, to call it just run the command with parameters.
+
+.SH DESCRIPTION
+_printf is a reproduction of printf() that produces output according to a format.
+Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
+The function can print any string passed inside double quotes, or you can call parameters and enter your variables/text outside the double quotes.
+
+.SH SPECIFIERS
+.B Not all specifiers of printf() are used, the required ones are:
+.IP - %c - Used to print a character
+.IP - %s - Used to print a string
+.IP - %% - Used to print a percentage (%) symbol
+.IP - %d - Used to print a decimal number
+.IP - %i - Used to print an integer number
+
+.SH EXAMPLES
+Command: _printf("Hello%s\n", ", World!");
+Return: Hello, World!
+
+.SH BUGS
+No bugs known.
+
+.SH AUTHOR
+Felipe Sandim (felipe.sandim@holbertonschool.com) and Felippe Mari (felippe.mari@holbertonschool.com)
+
+.SH COPYRIGHT
+Copyright 2022 Holberton School Uruguay
