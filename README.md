@@ -40,6 +40,7 @@ Not all specifiers of *printf()* are used, the required ones are:
 
 ## EXAMPLE
 Command: `_printf("Hello%s0, ", World!")`
+
 Returns: `Hello, World!`
 
 ## FLOWCHART
